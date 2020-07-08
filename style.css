@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.loader-bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #293F50;
+}
+
+.fas {
+    font-size: 40px;
+    color: #FE0002;
+}
+
+.shadow {
+    text-shadow: 5px 5px #1d1c1c;  
+}
+
+.toolbox-wrapper {
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 70px; 
+    /* background-color: #293F50; */
+    z-index: 99;
+    animation-name: toolbox;
+    animation-duration: 0.7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.toolbox{
+    font-size: 70px;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -25px;
+    animation-duration: 0.7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.hammer-wrapper {
+    animation-name: hammer;
+}
+
+.ruler-wrapper {
+    animation-name: ruler;
+}
+
+.wrench-wrapper {
+    animation-name: wrench;
+}
+
+.roller-wrapper {
+    animation-name: roller;
+}
+
+.screwdriver-wrapper {
+    animation-name: screwdriver;
+}
+
+.pencil-wrapper {
+    animation-name: pencil;
+}
+
+.screwdriver {
+    transform-origin: 0 0;
+    transform: translate(88%, 0%) rotate(90deg);
+}
+
+@keyframes toolbox {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+    
+} 
+
+@keyframes hammer {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(90px) translateY(120px);
+    }
+}
+
+@keyframes ruler {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-90px) translateY(120px);
+    }
+}
+
+@keyframes wrench {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-130px);
+    }
+}
+
+@keyframes roller {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-90px) translateY(-120px);
+    }
+}
+
+@keyframes screwdriver {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(140px);
+    }
+}
+
+@keyframes pencil {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(90px) translateY(-120px);
+    }
+}
